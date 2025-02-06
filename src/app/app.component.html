@@ -3,7 +3,7 @@
     (isSidebarOpen)="isSidebarOpen = $event"
   ></app-sidebar-button>
   <app-sidebar
-    class="fixed top-0 left-0 bottom-0 w-64 z-45 sm:translate-x-0 transition-all duration-500"
+    class="fixed top-0 left-0 bottom-0 w-64 z-45 lg:translate-x-0 transition-all duration-500"
     [class.-translate-x-full]="!isSidebarOpen"
   >
   </app-sidebar>
@@ -11,10 +11,10 @@
     [class.hidden]="!isSidebarOpen"
     (isSidebarOpen)="isSidebarOpen = $event"
   ></app-black-bg>
-  <div class="sm:ml-64 relative">
+  <div class="lg:ml-64 relative">
     <router-outlet></router-outlet>
     <app-footer
-      class="absolute top-full right-0 left-0 sm:-left-64 sm:z-50"
+      class="absolute top-full right-0 left-0 lg:-left-64 lg:z-50"
     ></app-footer>
   </div>
 </main>
